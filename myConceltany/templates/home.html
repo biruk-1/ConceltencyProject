@@ -1,0 +1,24 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>DreamComeTrueConcelt.com</title>
+    </head>
+    <body>
+        <H1>YOUR DREAM CAN COME TRUE THROUGH YOUR PERSISTENCE AND HARD WORK</H1>
+        <H2>WE WILL HELP YPU THROUGH YOU DREAM</H2>
+        {% block content %}
+        {% comment %} <form method = 'POST'>{% csrf_token %}{form.as_p}
+            <input type="text" placeholder = "first-name">
+            <input type="text" placeholder = "last-name">
+            <input type="text" placeholder = "email">
+            <input type="text" placeholder = "password">
+            <button type="submit">Submit</button>
+        </form> {% endcomment %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+        {% endblock  %}
+    </body>
+</html>
