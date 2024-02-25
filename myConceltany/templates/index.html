@@ -1,0 +1,11 @@
+{% extends "home.html" %}
+
+{% block content %}
+    <h1>List of Users</h1>
+    <ul>
+        {% for user in obj %}
+            <li>{{ user.first_name }} - {{ user.last_name }} - {{user.email}}</li>
+            
+        {% endfor %}
+    </ul>
+{% endblock %}
